@@ -1,0 +1,73 @@
+$font-primary: "Sen",
+"Helvetica",
+sans-serif;
+$font-secondary: "Roboto",
+"Helvetica",
+sans-serif;
+
+body {
+  font-family: $font-secondary;
+  color: $white;
+}
+
+header {
+  font-family: $font-primary;
+  color: $black;
+  small {
+    font-size: .8em;
+    margin-top: .2em;
+  }
+}
+
+footer {
+  font-family: $font-primary;
+
+  .footer {
+    font-size: .8em;
+    color: $black;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: .5em 0;
+  line-height: 1.3em;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+p {
+  font-size: 1em;
+}
+small {
+  font-size: .8em;
+}
+
+a {
+  @include transition(all .3s ease);
+  color: inherit;
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+}

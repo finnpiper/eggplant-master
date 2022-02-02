@@ -1,0 +1,114 @@
+.blob {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  fill: #ffffff;
+  opacity: .2;
+  width: 100vw;
+  height: 100%;
+  transition: all .25s ease-in-out;
+
+  path {
+    transform: translate(130%, 120%) scale(2.5);
+    transform-origin: top;
+  }
+}
+
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(120deg,  $top 20%, $bottom 60%); /* FF3.6+ */
+    background: -webkit-gradient(120deg, color-stop(20%,$top), color-stop(60%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(120deg,  $top 20%,$bottom 60%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(120deg,  $top 20%,$bottom 60%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(120deg,  $top 20%,$bottom 60%); /* IE10+ */
+    background: linear-gradient(120deg,  $top 20%,$bottom 60%);
+}
+
+#intro-bg {
+  z-index: 15;
+  @include linearGradient($color-4, $color-5);
+}
+
+#question-1-bg {
+  /* children's names */
+  z-index: 14;
+  @include linearGradient($color-5, $color-6);
+}
+
+#question-2-bg {
+  /* car make and model */
+  z-index: 13;
+  @include linearGradient($color-6, $color-7);
+}
+
+#question-3-bg {
+  /* sports team */
+  z-index: 12;
+  @include linearGradient($color-7, $color-8);
+}
+
+#question-4-bg {
+  /* middle name */
+  z-index: 11;
+  @include linearGradient($color-8, $color-1);
+}
+
+#question-5-bg {
+  /* top 10 list */
+  z-index: 10;
+  @include linearGradient($color-1, $color-2);
+}
+
+#question-6-bg {
+  /* age mother cites */
+  z-index: 9;
+  @include linearGradient($color-2, $color-3);
+}
+
+#question-7-bg {
+  /* name of street */
+  z-index: 8;
+  @include linearGradient($color-3, $color-4);
+}
+
+#question-8-bg {
+  /* name of town escaped */
+  z-index: 7;
+  @include linearGradient($color-4, $color-5);
+}
+
+#question-9-bg {
+  /* colour of cat's fur */
+  z-index: 6;
+  @include linearGradient($color-5, $color-6);
+}
+
+#question-10-bg {
+  /* casual sex ratio */
+  z-index: 5;
+  @include linearGradient($color-6, $color-7);
+}
+
+#question-11-bg {
+  /* one-word new year's summary */
+  z-index: 4;
+  @include linearGradient($color-7, $color-8);
+}
+
+#question-12-bg {
+  /* road trip passenger */
+  z-index: 3;
+  @include linearGradient($color-8, $color-1);
+}
+
+#question-13-bg {
+  /* co-parent */
+  z-index: 2;
+  @include linearGradient($color-1, $color-2);
+}
+
+#question-14-bg {
+  /* song when you realised */
+  z-index: 1;
+  @include linearGradient($color-2, $color-3);
+}
