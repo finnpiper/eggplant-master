@@ -272,18 +272,19 @@ button i {
 }
 
 [class*='qty-'] {
-  position: absolute;
+  font-size: 1.5em;
+  // position: absolute;
   cursor: pointer;
-  display: none;
-  visibility: hidden;
+  display: inline-block;
+  // visibility: hidden;
 
   &[class*='plus'] {
-    left: calc(20% - 12px);
+    // left: calc(20% - 12px);
   }
 
   &[class*='minus'] {
-    bottom: 2px;
-    left: calc(20% - 12px);
+    // bottom: 2px;
+    // left: calc(20% - 12px);
   }
 }
 
